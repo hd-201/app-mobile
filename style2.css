@@ -5,7 +5,7 @@ body {
 }
 h3 {
     text-align: center;
-    background-color: #12c545;
+    background-color: #48c911;
     color: #fff;
     font-size: 18px;
     padding: 10px 0;
@@ -13,10 +13,14 @@ h3 {
 }
 .tab-container {
     text-align: center;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 100px);
     overflow: auto;
 }
 .tabs {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    width: 100%;    
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -30,7 +34,6 @@ h3 {
 }
 .tab-content {
     display: none;
-    max-height: 395px;
     overflow: auto;
 }
 .tab-content.active {
@@ -39,6 +42,16 @@ h3 {
 .active-tab{
     color: #5cc52b;
 }
+/* img */
+.image-cell {
+    position: relative;
+}
+.icon-overlay {
+    position: absolute;
+    top: 10px;
+    left: 18px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
@@ -69,3 +82,4 @@ footer {
 .active-menu-item {
     color: #c52b2b;
 }
+
